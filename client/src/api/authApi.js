@@ -1,10 +1,10 @@
 import axios from 'axios';
 
-const API_URL = "http://localhost:3000/api/auth";
+const API_URL = "https://psquare-backend.onrender.com/api/auth";
 
 
 const api = axios.create({
-  baseURL: "http://localhost:3000",
+  baseURL: "https://psquare-backend.onrender.com",
   withCredentials: true 
 });
 
