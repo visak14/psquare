@@ -16,8 +16,9 @@ connectDB();
 app.use(express.json());
 app.use(cookieParser());
 app.use(cors({
-  origin: 'https://psquare-frontend-m8zs.onrender.com', 
-  credentials: true,
+  origin: 'https://psquare-frontend-m8zs.onrender.com',
+  methods: ['GET', 'POST', 'PUT', 'DELETE'],
+  credentials: true
 }));
 
 app.use('/api/auth', authRoutes);
